@@ -9,7 +9,6 @@ export class WorldcoinAppBackendStack extends cdk.Stack {
 
     const table = new Table(this, 'dbtable', {
       partitionKey: {name: 'index', type: AttributeType.NUMBER},
-      //sortKey: {name: 'offset', type: AttributeType.NUMBER},
     }); 
 
     const api = new apigw.RestApi(this, 'RestAPI', {
@@ -19,23 +18,23 @@ export class WorldcoinAppBackendStack extends cdk.Stack {
     // define two endpoints 
     const generateMerkleTree = new lambda.Function(this, 'GenMerkleTreeHandler', {
       runtime: lambda.Runtime.NODEJS_18_X,
-      code: lambda.Code.fromAsset('lambda'),
-      handler: 'generatemerkletree.handler',
+      code: lambda.Code.fromAsset('endpoint'),
+      handler: 'generate-merkle-tree.handler',
       environment: {
         TABLE_NAME: table.tableName
       }
     });
     const getNodeByIndex = new lambda.Function(this, 'getNodeHandler', {
       runtime: lambda.Runtime.NODEJS_18_X,
-      code: lambda.Code.fromAsset('lambda'),
-      handler: 'getonenodebyindex.handler',
+      code: lambda.Code.fromAsset('endpoint'),
+      handler: 'get-node-by-index.handler',
       environment: {
         TABLE_NAME: table.tableName
       }
     });
 
     api.root.addResource('generate').addMethod('POST', new apigw.LambdaIntegration(generateMerkleTree));
-    api.root.addResource('get').addMethod('GET', new apigw.LambdaIntegration(getNodeByIndex));
+    api.root.addResource('retrieve').addMethod('GET', new apigw.LambdaIntegration(getNodeByIndex));
 
     table.grantReadWriteData(generateMerkleTree);
     table.grantReadWriteData(getNodeByIndex);

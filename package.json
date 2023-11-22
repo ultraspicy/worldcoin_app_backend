@@ -25,7 +25,7 @@
     "@aws-sdk/client-dynamodb": "^3.454.0",
     "@aws-sdk/lib-dynamodb": "^3.454.0",
     "@types/aws-lambda": "^8.10.126",
-    "aws-cdk-lib": "2.110.0",
+    "aws-cdk-lib": "^2.110.0",
     "aws-sdk": "^2.1499.0",
     "constructs": "^10.0.0",
     "crypto-js": "^4.2.0",

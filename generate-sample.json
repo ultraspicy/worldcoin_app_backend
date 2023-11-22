@@ -1,0 +1,88 @@
+{
+    "message": "Merkle tree generated successfully",
+    "nodes": [
+      {
+        "depth": 0,
+        "offset": 0,
+        "hash": "d7a1b6b915b52a2ab769fa172da0e8a182f2632fb009b64a49f7dd43ef4f19f2"
+      },
+      {
+        "depth": 1,
+        "offset": 0,
+        "hash": "c1209ab7611689531425476257b7c59bee92e03b25d071790df6100ba06135f5"
+      },
+      {
+        "depth": 1,
+        "offset": 1,
+        "hash": "74d900ac20137aa69f2a5540af29f60c6f1c9a2b6871dc0b6a6ed5bce9e1ab83"
+      },
+      {
+        "depth": 2,
+        "offset": 0,
+        "hash": "3456f38fe865f13e1f37a71edfa3293104c1dcae921089871fe2f038f4d56655"
+      },
+      {
+        "depth": 2,
+        "offset": 1,
+        "hash": "7050edfa74cadbbee974dc51aaf73194acb28cb2b6a3fb3045fcbfe01f056ec2"
+      },
+      {
+        "depth": 2,
+        "offset": 2,
+        "hash": "5cdb1d945a2dc72e8607a1cfba0435dc0b164ea4c664abf287ab449a295d5f16"
+      },
+      {
+        "depth": 2,
+        "offset": 3,
+        "hash": "8edfbe821d0e4f7c0fe465eba31d12161ffce174850fb511f6eb3ee0bfdf5f88"
+      },
+      {
+        "depth": 3,
+        "offset": 0,
+        "hash": "80084bf2fba02475726feb2cab2d8215eab14bc6bdd8bfb2c8151257032ecd8b",
+        "data": "a"
+      },
+      {
+        "depth": 3,
+        "offset": 1,
+        "hash": "b039179a8a4ce2c252aa6f2f25798251c19b75fc1508d9d511a191e0487d64a7",
+        "data": "b"
+      },
+      {
+        "depth": 3,
+        "offset": 2,
+        "hash": "263ab762270d3b73d3e2cddf9acc893bb6bd41110347e5d5e4bd1d3c128ea90a",
+        "data": "c"
+      },
+      {
+        "depth": 3,
+        "offset": 3,
+        "hash": "4ce8765e720c576f6f5a34ca380b3de5f0912e6e3cc5355542c363891e54594b",
+        "data": "d"
+      },
+      {
+        "depth": 3,
+        "offset": 4,
+        "hash": "42538602949f370aa331d2c07a1ee7ff26caac9cc676288f94b82eb2188b8465",
+        "data": "e"
+      },
+      {
+        "depth": 3,
+        "offset": 5,
+        "hash": "a0b37b8bfae8e71330bd8e278e4a45ca916d00475dd8b85e9352533454c9fec8",
+        "data": "f"
+      },
+      {
+        "depth": 3,
+        "offset": 6,
+        "hash": "9f2898da52dedaca29f05bcac0c8e43e4b9f7cb5707c14cc3f35a567232cec7c",
+        "data": "g"
+      },
+      {
+        "depth": 3,
+        "offset": 7,
+        "hash": "5a082c81a7e4d5833ee20bd67d2f4d736f679da33e4bebd3838217cb27bec1d3",
+        "data": "h"
+      }
+    ]
+  }
